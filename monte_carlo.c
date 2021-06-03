@@ -39,5 +39,28 @@ int main(void) {
   }
 }
 
+float mc_pi(int count)
+{
+  float a,b,c;
+  int inside_circle=0,outside_circle=0,total_points=0;
+  for(int i=0;i<=count;i++)
+  {
+    a=frandom();
+    b=frandom();
+    c=(a*a)+(b*b);
+    if(c<=1)
+    {
+      inside_circle++;
+    }
+    else
+    {
+    outside_circle++;
+    }
+  }
+  total_points=inside_circle+outside_circle;
+  float pi=4*(float)inside_circle/outside_circle;
+  return pi;
+}
+
 
 
