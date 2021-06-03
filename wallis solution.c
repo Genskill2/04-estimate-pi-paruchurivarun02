@@ -27,7 +27,7 @@ int main(void) {
  {
    float a=1.0;
    float b;
-   for(int i;i<=count;i++)
+   for(int i;i<=3000;i++)
    {
      b=(float)(4*i*i)/((4*i*i)-1);
      a=a*b;
