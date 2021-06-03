@@ -41,7 +41,7 @@ int main(void) {
 
 float mc_pi(int count)
 {
-  float a,b,c;
+  float a, b, c;
   int inside_circle=0,outside_circle=0,total_points=0;
   for(int i=0;i<=count;i++)
   {
