@@ -29,9 +29,10 @@ int main(void) {
    float b;
    for(int i;i<=count;i++)
    {
-     b=(float)((4*i*i)/((4*i*i)-1));
+     b=(float)(4*i*i)/((4*i*i)-1);
      a=a*b;
    }
    a=a*2;
    return a;
  }
+
