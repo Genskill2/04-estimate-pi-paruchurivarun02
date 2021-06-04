@@ -42,22 +42,16 @@ int main(void) {
 float mc_pi(int count)
 {
   float a=0;
-  float b,d;
+  
   for(int i=0;i<count;i++)
   {
-    float a=frandom();
-    float b=frandom();
-    
-    if(sqrt((a*a)+(b*b))<1)
-    {
-    
-a++;
+    float x=frandom();
+    float y=frandom();
+    float d=sqrt(pow(x,2)+pow(y,2));
+    if(d<1){
+     a++;
     }
   }
-  float pi=((4*a)/count);
+  float pi = 4*a/count;
   return pi;
 }
-
-
-
-
