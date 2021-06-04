@@ -5,16 +5,19 @@
 
 float wallis_pi(int n)
 {
-   float a=1.0;
+   float pi;
+   float a=1;
+   float b;
   
-   for(int i=1;i<=n;i++)
+   for(int i=1;i<=2999;i++)
    {
      
-     a=a*(4*i*i)/((4*i*i)-1);
+     float b=(4.0*i*i)/((4*i*i)-1);
+      a=a*b;
    }
-   a=2*a;
+   pi=2*a;
    
-   return a;
+   return pi;
  }
 
 
