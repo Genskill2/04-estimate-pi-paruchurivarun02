@@ -4,6 +4,20 @@
 #include <math.h>
 
 float wallis_pi(int);
+{
+   float a=1.0;
+  
+   for(int i=1;i<=n;i++)
+   {
+     
+     a=a*(4*i*i)/((4*i*i)-1);
+   }
+   a=2*a;
+   
+   return a;
+ }
+
+
 
 int main(void) {
   float pi;
@@ -23,17 +37,5 @@ int main(void) {
     }
   }
 }
- float wallis_pi(int n)
- {
-   float a=1.0;
-  
-   for(int i=1;i<=n;i++)
-   {
-     
-     a=float(4*i*i)/((4*i*i)-1);
-   }
-   a=2*a;
-   
-   return a;
- }
-
+ 
+ 
