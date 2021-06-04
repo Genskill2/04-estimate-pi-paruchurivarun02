@@ -47,14 +47,14 @@ float mc_pi(int count)
   {
     float a=frandom();
     float b=frandom();
-    c=(a*a)+(b*b);
-    if(sqrt(c)<1)
+    
+    if(sqrt((a*a)+(b*b))<1)
     {
     
 a++;
     }
   }
-  float pi=((4*a)/count;
+  float pi=((4*a)/count);
   return pi;
 }
 
