@@ -30,9 +30,10 @@ int main(void) {
    for(int i=1;i<=n;i++)
    {
      
-     a=a*(4*i*i)/((4*i*i)-1);
+     a=float(4*i*i)/((4*i*i)-1);
    }
+   a=2*a;
    
-   return (2*a)
+   return a;
  }
 
