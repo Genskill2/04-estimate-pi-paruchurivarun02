@@ -32,8 +32,7 @@ int main(void) {
      
      a=a*(4*i*i)/((4*i*i)-1);
    }
-   printf("%f",a);
    
-   return (2*a);
+   return (2*a)
  }
 
