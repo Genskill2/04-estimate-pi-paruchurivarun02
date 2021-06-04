@@ -23,12 +23,12 @@ int main(void) {
     }
   }
 }
- float wallis_pi(int count)
+ float wallis_pi(int n)
  {
    float a=1;
    float b;
    int c,d;
-   for(int i;i<=n;i++)
+   for(int i=1;i<=n;i++)
    {
      c=4.0*i*i;
      d=(4.0*i*i)-1;
