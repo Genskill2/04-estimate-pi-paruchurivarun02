@@ -22,12 +22,12 @@ int main(void) {
 }
 float wallis_pi(int n)
 {
-int i;
-float k,ans=1.0;
-for(i=1;i<=n;i++)
-{
-k=(float)(4*i*i)/(4*i*i-1);
-ans=ans*k;
-}
-return(2*ans);
+float ret=1;
+  float b;
+  for(int i=1;i<=n;i++){
+    float b=(4.0*i*i)/((4.0*i*i)-1);
+    ret=ret*b;
+  }
+  ret=ret*2;
+  return ret;
 }
