@@ -41,24 +41,20 @@ int main(void) {
 
 float mc_pi(int count)
 {
-  float a, b, c;
-  int inside_circle=0,outside_circle=0,total_points=0;
-  for(int i=0;i<=count;i++)
+  float a=0;
+  float b,d;
+  for(int i=0;i<count;i++)
   {
-    a=frandom();
-    b=frandom();
+    float a=frandom();
+    float b=frandom();
     c=(a*a)+(b*b);
-    if(c<=1)
+    if(sqrt(c)<1)
     {
-      inside_circle++;
-    }
-    else
-    {
-    outside_circle++;
+    
+a++;
     }
   }
-  total_points=inside_circle+outside_circle;
-  float pi=4*(float)inside_circle/outside_circle;
+  float pi=((4*a)/count;
   return pi;
 }
 
